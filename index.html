@@ -3,17 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
 <title>ix-b</title>
 <meta name="description" content="ix-b is an operating platform for property development — identity, repositories, documents and correspondence consolidated into a single control plane across the entire development stack.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { font-size: 16px; }
+  html { font-size: 16px; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   body {
     background: #fff;
     color: #000;
     font-family: Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
   .page {
     min-height: 100vh;
@@ -48,23 +50,26 @@
   }
   h1 {
     font-weight: 700;
-    font-size: clamp(2.75rem, 10.5vw, 9rem);
-    line-height: 0.98;
-    letter-spacing: -0.035em;
-    max-width: 12ch;
+    font-size: clamp(2.125rem, 6.5vw, 5.5rem);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    max-width: 14ch;
   }
   .support {
-    margin-top: 2.5rem;
+    margin-top: 2.25rem;
     font-size: 1.0625rem;
     line-height: 1.5;
     max-width: 36rem;
     color: #000;
   }
   footer { color: #555; }
-  footer a { color: #555; }
-  footer a:hover { color: #000; }
+  @media (max-width: 60rem) {
+    .page { padding: 1.75rem 1.75rem 1.5rem; }
+  }
   @media (max-width: 34rem) {
     .page { padding: 1.25rem 1.25rem 1rem; }
+    main { padding: 3rem 0; }
+    .support { font-size: 1rem; margin-top: 1.75rem; }
   }
 </style>
 </head>
@@ -87,7 +92,6 @@
 
   <footer>
     <span>ix-b.io — London</span>
-    <a href="https://github.com/ix-b-io" rel="me">github.com/ix-b-io</a>
   </footer>
 </div>
 </body>
