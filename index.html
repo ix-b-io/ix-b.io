@@ -50,10 +50,13 @@
   }
   h1 {
     font-weight: 700;
-    font-size: clamp(2.125rem, 6.5vw, 5.5rem);
+    font-size: clamp(1.875rem, 6.5vw, 5.5rem);
     line-height: 1.02;
     letter-spacing: -0.03em;
-    max-width: 14ch;
+  }
+  h1 .line {
+    display: block;
+    white-space: nowrap;
   }
   .support {
     margin-top: 2.25rem;
@@ -81,7 +84,7 @@
   </header>
 
   <main>
-    <h1>One control plane. Every workstream.</h1>
+    <h1><span class="line">One control plane.</span> <span class="line">Every workstream.</span></h1>
     <p class="support">
       ix-b is an operating platform for property development.
       Identity, repositories, documents and correspondence, consolidated into
