@@ -50,11 +50,13 @@
   }
   h1 {
     font-weight: 700;
-    font-size: clamp(1.75rem, 5vw, 5rem);
+    font-size: clamp(2rem, 8.5vw, 6.5rem);
     line-height: 1.02;
     letter-spacing: -0.03em;
-    max-width: 16em;
-    text-wrap: balance;
+  }
+  h1 .line {
+    display: block;
+    white-space: nowrap;
   }
   .support {
     margin-top: 2.25rem;
@@ -82,7 +84,7 @@
   </header>
 
   <main>
-    <h1>Development is orchestration. We keep the score.</h1>
+    <h1><span class="line">Development is</span> <span class="line">orchestration. We</span> <span class="line">keep the score.</span></h1>
     <p class="support">
       ix-b is an operating platform for property development.
       Identity, repositories, documents, correspondence and geometry, consolidated into
